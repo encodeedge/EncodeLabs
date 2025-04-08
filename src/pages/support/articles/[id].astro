@@ -1,11 +1,9 @@
   ---
   import BaseLayout from "@layout/BaseLayout.astro";
   import Icon from "@ui/icons/Icon.astro";
-  import PostFeedback from "@common/PostFeedback.svelte";
   import type { WithContext, Thing } from "schema-dts";
   import { formatDate } from "@utils/utils";
   import { getReadingTime } from "@utils/reading-time";
-  //import { getEntry, render } from "astro:content";
   import { getCollection, render } from 'astro:content';
 
   //Update below 1,2 for static site generation.
@@ -101,26 +99,6 @@
           >
             <Content />
           </section>
-          <PostFeedback
-            client:only="svelte"
-            title="Was this post helpful?"
-            firstChoice="Yes"
-            secondChoice="No"
-            slug={slug}
-          >
-            <svelte:fragment slot="helpfulIcon">
-              <Icon
-                name="thumbUp"
-                class="transition duration-300 group-hover:-translate-y-1 group-focus-visible:-translate-y-1"
-              />
-            </svelte:fragment>
-            <svelte:fragment slot="notHelpfulIcon">
-              <Icon
-                name="thumbDown"
-                class="transition duration-300 group-hover:translate-y-1 group-focus-visible:translate-y-1"
-              />
-            </svelte:fragment>
-          </PostFeedback>
         </div>
       </div>
     </div>
