@@ -7,14 +7,14 @@ import markdoc from "@astrojs/markdoc";
 import keystatic from "@keystatic/astro";
 
 //Added for Static site generation
- const isDev = process.env.NODE_ENV === "development"
+ const isDev = "development"
  
 
 // https://astro.build/config
 export default defineConfig({
   // The `site` property specifies the base URL for your site.
   // Be sure to update this to your own domain (e.g., "https://yourdomain.com") before deploying.
-  site: "https://www.encodeedge.com",
+  site: "https://www.encodeedge.com/",
   prefetch: true,
   trailingSlash: "never",
   experimental: {
@@ -29,6 +29,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  output: isDev ? 'server' : 'static',
+  output: isDev ? 'static' : 'server',
   adapter: vercel(),
 });
