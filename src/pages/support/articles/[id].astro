@@ -5,24 +5,24 @@
   import type { WithContext, Thing } from "schema-dts";
   import { formatDate } from "@utils/utils";
   import { getReadingTime } from "@utils/reading-time";
-  import { getEntry, render } from "astro:content";
+  //import { getEntry, render } from "astro:content";
+  import { getCollection, render } from 'astro:content';
 
-  // 1. Get the slug from the incoming server request
-  const { id } = Astro.params;
-  if (id === undefined) {
-    return Astro.redirect("/404");
+  //Update below 1,2 for static site generation.
+  // 1. Generate a new path for every collection entry
+  export async function getStaticPaths() {
+    const posts = await getCollection('articles');
+    return posts.map(post => ({
+      params: { id: post.id },
+      props: { post },
+    }));
   }
 
-  // 2. Query for the entry directly using the request slug
-  const post = await getEntry("articles", id);
-
-  // 3. Redirect if the entry does not exist
-  if (post === undefined) {
-    return Astro.redirect("/404");
-  }
-
-  // 4. Render the entry to HTML in the template
+  // 2. For your template, you can get the entry directly from the prop
+  const { post } = Astro.props;
   const { Content, headings } = await render(post);
+  const { id } = Astro.params;
+
 
   const validHeadings = headings.filter((heading) => heading.depth === 2);
   const readingTime = getReadingTime(post.body ?? "");
