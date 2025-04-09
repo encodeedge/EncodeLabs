@@ -30,7 +30,7 @@ jobs:
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./vercel/output/static
+          path: .vercel/output/static
   deploy:
     needs: build
     runs-on: ubuntu-latest
