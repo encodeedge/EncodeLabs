@@ -20,13 +20,17 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
-        uses: withastro/action@v3
-        with:
-          #path:  # The root location of your Astro project inside the repository. (optional)
-          # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
-            package-manager: npm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
+      - name: Install dependencies
+        run: npm install  # Install dependencies before building the site
+      
+      - name: Build Astro site
+        run: npm run build
+  
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./vercel/output/static
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -37,3 +41,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+          
