@@ -17,9 +17,6 @@ export default defineConfig({
   site: "https://www.encodeedge.com/",
   prefetch: true,
   trailingSlash: "never",
-  experimental: {
-    clientPrerender: true,
-  },
   integrations: [
     react(),
     markdoc(),
@@ -31,3 +28,4 @@ export default defineConfig({
   output: 'static',
   adapter: vercel(),
 });
+
