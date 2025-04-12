@@ -11,13 +11,13 @@ const currentPath = Astro.url.pathname;
     id="mega-menu-support"
     type="button"
     class={`hs-dropdown-toggle flex w-full items-center rounded-lg p-2 font-medium text-slate-800 hover:bg-slate-100 focus:bg-slate-100 focus:outline-hidden ${
-      currentPath.startsWith("/support") ? "underline underline-offset-4" : ""
+      currentPath.startsWith("/blog") ? "underline underline-offset-4" : ""
     }`}
     aria-haspopup="menu"
     aria-expanded="false"
     aria-label="Mega Menu"
   >
-    Support <Icon name="arrowDownRight" />
+    Blog <Icon name="arrowDownRight" />
   </button>
 
   <div

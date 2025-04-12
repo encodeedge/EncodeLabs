@@ -1,29 +1,29 @@
 export const featuresMenu = [
   {
-    sectionTitle: "AI-Powered Insights",
+    sectionTitle: "EncodeEdge Advance features",
     items: [
       {
         icon: "chartPie",
-        title: "Predictive Modeling",
-        description: "Use AI-driven simulations to forecast outcomes with confidence.",
-        href: "#",
+        title: "RoadMaps",
+        description: "Our Roadmaps are designed to give you a structured, hands-on path.",
+        href: "/roadmaps",
       },
       {
-        icon: "portfolio",
-        title: "Market Trends",
-        description: "Identify key trends and make strategic decisions with real-time insights.",
-        href: "#",
+        icon: "presentationChart",
+        title: "AI/ML Competitions",
+        description: "Test your knowledge by participating in live competitions.",
+        href: "/AI-ML/Competitions",
       },
     ],
   },
   {
-    sectionTitle: "Advanced Data Tools",
+    sectionTitle: "Projects",
     items: [
       {
-        icon: "presentationChart",
-        title: "Automated Reports",
-        description: "Generate detailed reports and dashboards in seconds.",
-        href: "#",
+        icon: "portfolio",
+        title: "Practice by working on projects",
+        description: "Projects to enhance your knowledge and skill level.",
+        href: "/projects",
       },
     ],
   },

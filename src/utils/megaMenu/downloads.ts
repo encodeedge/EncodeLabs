@@ -4,34 +4,40 @@ export const downloadsMenu = [
     items: [
       {
         icon: "download",
-        title: "EncodeEdge Core",
+        title: "Getting started guide",
         description:
-          "Download the free trial version of the EncodeEdge Core.",
-        href: "/downloads/EncodeEdge-core",
+          "Download easy to use getting started guide",
+        href: "/downloads/getting-started",
+      },
+      {
+        icon: "documentMagnifyingGlass",
+        title: "Reference",
+        description: "Read latest technical documentations, papers and references to learn from the original sources.",
+        href: "/downloads/reference",
       },
     ],
   },
   {
-    sectionTitle: "Licensing",
+    sectionTitle: "Tutorials",
     items: [
       {
         icon: "badge",
-        title: "License Options",
-        description: "Choose the best license for your needs and unlock full features.",
-        href: "/downloads/license-options",
+        title: "AI-ML",
+        description: "Get started with learning AI and ML concepts",
+        href: "/foundation/ai-ml",
       },
       {
         icon: "chatBubble",
-        title: "Request a Quote",
-        description: "Inquire about custom pricing, volume discounts, or tailored solutions.",
-        href: "/downloads/request-quote",
+        title: "Sitecore DXP",
+        description: "Advance into the world of headless DXP platform",
+        href: "/foundation/sitecore",
       },
       {
         icon: "arrowPath",
-        title: "Subscription Licensing",
+        title: "Frontend",
         description:
-          "Register the EncodeEdge Core with a subscription license for seamless updates.",
-        href: "/downloads/subscription-licensing",
+          "Start learning the basics of frontend technologies",
+        href: "/foundation/frontend",
       },
     ],
   },

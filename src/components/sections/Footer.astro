@@ -3,14 +3,13 @@ import FooterForm from "@ui/forms/FooterForm.astro";
 import ContactInfo from "@common/ContactInfo.astro";
 
 // Props for customization
-const companyName = "EncodeEdge Analytics Inc.";
+const companyName = "EncodeEdge";
 const companyDescription =
-  "EncodeEdge Analytics Inc. is a leading business intelligence and analytics software company founded in 2018, with offices in Boston and Seattle.";
+"EncodeEdge is a leading technology blog and software company founded in 2025, with office in Pune, Maharashtra, India.";
 
 // Contact information for the company
 const contactDetails = {
-  address: "Seattle, WA, 98104",
-  phone: "1 (833) 328-2669",
+  address: "Pune, MH, 411001",
   email: "info@encodeedge.com",
   website: "www.encodeedge.com",
 };
@@ -19,11 +18,11 @@ const contactDetails = {
 const copyrightYear = new Date().getFullYear();
 
 // Developer or team behind the website
-const craftedBy = { name: "gulamoff", url: "https://www.gulamoff.dev/" };
+const craftedBy = { name: "atul", url: "https://github.com/atulkrjha" };
 
 // Trademark notice
 const trademarkNotice =
-  "Microsoft&reg; and Excel&reg; are registered trademarks or trademarks of Microsoft Corporation";
+  "All other product names, logos, and brands are property of their respective owners.";
 ---
 
 <footer
@@ -66,8 +65,8 @@ const trademarkNotice =
       class="grid gap-y-2 sm:flex sm:items-center sm:justify-between sm:gap-y-0"
     >
       {/* Copyright and Crafted By Section */}
-      <p class="text-sm text-slate-400/50">
-        &copy; 2018-{copyrightYear}
+      <p class="text-sm text-black-400/50">
+        {copyrightYear}
         {companyName} Crafted by
         <a
           href={craftedBy.url}
@@ -80,7 +79,7 @@ const trademarkNotice =
       </p>
 
       {/* Trademark Notice */}
-      <p class="text-sm text-slate-400/50">
+      <p class="text-sm text-black-400/50">
         <Fragment set:html={trademarkNotice} />
       </p>
     </div>

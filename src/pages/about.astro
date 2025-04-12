@@ -6,19 +6,19 @@ import type { WithContext, Thing } from "schema-dts";
 const aboutData = {
   title: "EncodeEdge,",
   description:
-    "founded in 2018, is a leading provider of powerful analytics tools that transform your Excel workspace into a comprehensive analytics powerhouse, making data analysis accessible and actionable for businesses worldwide.",
+    "Founded in 2025 and headquartered in Pune, India, EncodeEdge is a technology-focused blog dedicated to delivering in-depth insights on data analytics, data science, and emerging technologies. Our mission is to simplify complex concepts and contribute to the broader tech ecosystem through reliable, accessible knowledge.",
   statistics: [
     {
       label: "Industry Sectors Served",
-      value: "15+",
+      value: "10+",
     },
     {
-      label: "Data Points Processed",
-      value: "Billions",
+      label: "Blog posts",
+      value: "Hundreds",
     },
     {
-      label: "Custom Reports Generated",
-      value: "500,000+",
+      label: "Projects",
+      value: "500+",
     },
   ],
 };
@@ -28,19 +28,19 @@ const expertiseData = {
   title: "Our Expertise:",
   expertise: [
     {
-      title: "AI-Powered Insights:",
+      title: "AI & Machine Learning",
       description:
-        "Uncover deep insights and predict trends with advanced AI algorithms for proactive decision-making.",
+        "Explore strategic applications and implementations of AI and machine learning with platforms like Azure ML and AWS SageMaker.",
     },
     {
-      title: "Real-Time Data Visualization:",
+      title: ".NET Core & Azure",
       description:
-        "Transform data into interactive visuals, tracking key metrics in real-time for actionable insights.",
+        "Dive into the world of .NET development, from building scalable web applications to integrating seamlessly with Azure cloud services for enhanced performance, security, and scalability.",
     },
     {
-      title: "Predictive Analytics Engine:",
+      title: "Sitecore Headless & Sitecore XM Cloud",
       description:
-        "Leverage machine learning to forecast trends and identify opportunities, staying ahead of the curve.",
+        "Learn the development headless Sitecore XMC with JSS SDK for NextJs front end",
     },
   ],
 };
@@ -48,7 +48,7 @@ const expertiseData = {
 // SEO metadata for the page
 const seo = {
   title: "About EncodeEdge",
-  description: "Learn more about EncodeEdge, the analytics platform that transforms your Excel data with advanced insights and predictive models.",
+  description: "Learn more about EncodeEdge and its offering in learning and development of Sitecore, NextJs, Azure, AWS and .Net Core.",
 };
 
 // Schema.org metadata for SEO
@@ -59,12 +59,12 @@ const schema: WithContext<Thing> = {
   "@id": Astro.url.href,
   "url": Astro.url.href,
   "name": "About EncodeEdge",
-  "description": "Get to know EncodeEdge, the powerful analytics platform for Excel that enables businesses to make data-driven decisions quickly with no coding required.",
+  "description": "Learn more about EncodeEdge and its offering in learning and development of Sitecore, NextJs, Azure, AWS and .Net Core.",
   "isPartOf": {
     "@type": "WebSite",
     "url": `${Astro.site}`,
     "name": "EncodeEdge",
-    "description": "EncodeEdge Analytics Inc. provides advanced analytics for Excel to help businesses unlock actionable insights quickly with no coding required."
+    "description": "Learn more about EncodeEdge and its offering in learning and development of Sitecore, NextJs, Azure, AWS and .Net Core."
   }
 };
 ---

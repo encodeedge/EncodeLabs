@@ -1,27 +1,20 @@
 export const platformMenu = [
   {
-    href: "/platform",
-    title: "EncodeEdge Core",
-    description: "AI-powered risk analysis and data modeling engine.",
-    image: "encodeedge",
+    href: "/events/podcast",
+    title: "Podcasts",
+    description: "Real talk, fresh takes — one episode at a time.",
+    image: "podcast",
   },
   {
-    href: "/platform",
-    title: "InsightFlow Cloud",
-    description: "A web-based platform for collaborative data analytics.",
-    image: "if_cloud",
+    href: "/events/sessions",
+    title: "Sessions",
+    description: "One session, endless insight.",
+    image: "session",
   },
   {
-    href: "/platform",
-    title: "InsightFlow Planner",
-    description: "Advanced forecasting and scenario planning for business strategy.",
-    image: "if_planner",
-  },
-  {
-    href: "/platform",
-    title: "InsightFlow Visualizer",
-    description:
-      "Custom dashboards and interactive data storytelling.",
-    image: "if_visualizer",
+    href: "/events/technews",
+    title: "Tech News",
+    description: "Tech moves fast — we move faster, keep updated with latest happenings.",
+    image: "technews",
   },
 ];
