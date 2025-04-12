@@ -1,9 +1,9 @@
 export const platformMenu = [
   {
     href: "/platform",
-    title: "DataNova Core",
+    title: "EncodeEdge Core",
     description: "AI-powered risk analysis and data modeling engine.",
-    image: "datanova",
+    image: "EncodeEdge",
   },
   {
     href: "/platform",

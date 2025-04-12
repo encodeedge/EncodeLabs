@@ -24,15 +24,15 @@ const defaultSchema: WithContext<Thing> = {
   inLanguage: "en-US",
   "@id": Astro.url.href,
   url: Astro.url.href,
-  name: "DataNova",
+  name: "EncodeEdge",
   description:
-    "Unlock powerful data insights with DataNova's advanced analytics suite for Excel. Visualize, analyze, and make data-driven decisions in minutes with seamless Excel integration, AI-powered analysis, and predictive forecasting models.",
+    "Unlock powerful data insights with EncodeEdge's advanced analytics suite for Excel. Visualize, analyze, and make data-driven decisions in minutes with seamless Excel integration, AI-powered analysis, and predictive forecasting models.",
   isPartOf: {
     "@type": "WebSite",
     url: `${Astro.site}`,
-    name: "DataNova",
+    name: "EncodeEdge",
     description:
-      "DataNova Analytics Inc. provides advanced analytics for Excel to help businesses unlock actionable insights quickly with no coding required.",
+      "EncodeEdge Analytics Inc. provides advanced analytics for Excel to help businesses unlock actionable insights quickly with no coding required.",
   },
 };
 ---
@@ -42,27 +42,27 @@ const defaultSchema: WithContext<Thing> = {
     {/* SEO Meta Tags */}
     <SEO
       charset="utf-8"
-      title={seo?.title ?? "DataNova"}
+      title={seo?.title ?? "EncodeEdge"}
       description={seo?.description ??
-        "Unlock powerful data insights with DataNova's advanced analytics suite for Excel. Visualize, analyze, and make data-driven decisions in minutes with seamless Excel integration, AI-powered analysis, and predictive forecasting models."}
+        "At Encodeedge, we make staying on top of the fast-paced world of technology easy and accessible. Whether you're a tech enthusiast, a professional looking to upskill, or someone just starting to explore the world of tech, our platform provides a comprehensive collection of resources to help you thrive. Dive into articles, tutorials, and expert insights covering a wide range of topics from AI, cloud computing, cybersecurity, blockchain, and emerging technologies, to industry trends, product reviews, and career advice. Our content is designed for all levels of learners — from beginners to experts — and focuses on breaking down complex tech concepts into clear, actionable insights. Join our vibrant community of learners and stay ahead of the curve in today’s tech-driven world. Explore, learn, and grow with us!"}
       openGraph={{
         basic: {
-          title: "DataNova - Unlock Insights from Your Excel Data",
+          title: "EncodeEdge - Master Today's Tech, Lead Tomorrow's World.",
           type: "website",
           image: socialImage,
         },
         optional: {
           description:
-            "Transform your Excel workspace with DataNova's powerful analytics suite. Get insights, predictive models, and visualizations in minutes with no coding required.",
+            "Transform your Excel workspace with EncodeEdge's powerful analytics suite. Get insights, predictive models, and visualizations in minutes with no coding required.",
         },
       }}
       twitter={{
         card: "summary_large_image",
-        title: "DataNova - Unlock Insights from Your Excel Data",
+        title: "EncodeEdge - Unlock Insights from Your Excel Data",
         description:
-          "Transform your Excel workspace with DataNova's powerful analytics suite. Visualize and analyze data quickly with no coding required.",
+          "Transform your Excel workspace with EncodeEdge's powerful analytics suite. Visualize and analyze data quickly with no coding required.",
         image: socialImage,
-        imageAlt: "DataNova Logo.",
+        imageAlt: "EncodeEdge Logo.",
       }}
       extend={{
         link: [

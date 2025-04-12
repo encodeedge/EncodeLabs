@@ -4,10 +4,10 @@ export const downloadsMenu = [
     items: [
       {
         icon: "download",
-        title: "DataNova Core",
+        title: "EncodeEdge Core",
         description:
-          "Download the free trial version of the DataNova Core.",
-        href: "/downloads/datanova-core",
+          "Download the free trial version of the EncodeEdge Core.",
+        href: "/downloads/EncodeEdge-core",
       },
     ],
   },
@@ -30,7 +30,7 @@ export const downloadsMenu = [
         icon: "arrowPath",
         title: "Subscription Licensing",
         description:
-          "Register the DataNova Core with a subscription license for seamless updates.",
+          "Register the EncodeEdge Core with a subscription license for seamless updates.",
         href: "/downloads/subscription-licensing",
       },
     ],
