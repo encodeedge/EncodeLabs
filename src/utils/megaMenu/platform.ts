@@ -3,7 +3,7 @@ export const platformMenu = [
     href: "/platform",
     title: "EncodeEdge Core",
     description: "AI-powered risk analysis and data modeling engine.",
-    image: "EncodeEdge",
+    image: "encodeedge",
   },
   {
     href: "/platform",
