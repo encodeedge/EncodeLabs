@@ -77,6 +77,19 @@ export default config({
         url: fields.url({ label: "Link" }),
       },
     }),
+
+    gettingstarted: collection({
+      label: "Getting Started Guides",
+      slugField: "title",
+      path: "src/data/gettingstarted/*",
+      format: { data: "json" },
+      schema: {
+        title: fields.slug({ name: { label: "Spreadsheet Name" } }),
+        description: fields.text({ label: "Description" }),
+        url: fields.url({ label: "Link" }),
+      },
+    }),
+
     whitepapers: collection({
       label: "Whitepapers",
       slugField: "title",
@@ -90,5 +103,126 @@ export default config({
         btnLink: fields.url({ label: "Button Link" }),
       },
     }),
+    projects: collection({
+      label: "Projects",
+      slugField: "title",
+      path: "src/content/projects/*",
+      format: { contentField: "content" },
+      schema: {
+        title: fields.slug({ name: { label: "Title" } }),
+        description: fields.text({ label: "Description" }),
+        content: fields.markdoc({
+          label: "Content",
+          options: {
+            image: {
+              directory: "src/assets/images/projects",
+              publicPath: "@images/projects/",
+            },
+          },
+        }),
+        date: fields.date({
+          label: "Publication date",
+          description: "The date of the publication",
+        }),
+      },
+    }),
+    roadmaps: collection({
+      label: "Roadmaps",
+      slugField: "title",
+      path: "src/content/roadmaps/*",
+      format: { contentField: "content" },
+      schema: {
+        title: fields.slug({ name: { label: "Title" } }),
+        description: fields.text({ label: "Description" }),
+        content: fields.markdoc({
+          label: "Content",
+          options: {
+            image: {
+              directory: "src/assets/images/roadmaps",
+              publicPath: "@images/roadmaps/",
+            },
+          },
+        }),
+        date: fields.date({
+          label: "Publication date",
+          description: "The date of the publication",
+        }),
+      },
+    }),
+
+    aiml: collection({
+      label: "AI ML Foundational Tutorials",
+      slugField: "title",
+      path: "src/content/aiml/*",
+      format: { contentField: "content" },
+      schema: {
+        title: fields.slug({ name: { label: "Title" } }),
+        description: fields.text({ label: "Description" }),
+        content: fields.markdoc({
+          label: "Content",
+          options: {
+            image: {
+              directory: "src/assets/images/aiml",
+              publicPath: "@images/aiml/",
+            },
+          },
+        }),
+        date: fields.date({
+          label: "Publication date",
+          description: "The date of the publication",
+        }),
+      },
+    }),
+
+    frontend: collection({
+      label: "Frontend Foundational Tutorials",
+      slugField: "title",
+      path: "src/content/frontend/*",
+      format: { contentField: "content" },
+      schema: {
+        title: fields.slug({ name: { label: "Title" } }),
+        description: fields.text({ label: "Description" }),
+        content: fields.markdoc({
+          label: "Content",
+          options: {
+            image: {
+              directory: "src/assets/images/frontend",
+              publicPath: "@images/frontend/",
+            },
+          },
+        }),
+        date: fields.date({
+          label: "Publication date",
+          description: "The date of the publication",
+        }),
+      },
+    }),
+
+
+    sitecore: collection({
+      label: "Sitecore Foundational Tutorials",
+      slugField: "title",
+      path: "src/content/sitecore/*",
+      format: { contentField: "content" },
+      schema: {
+        title: fields.slug({ name: { label: "Title" } }),
+        description: fields.text({ label: "Description" }),
+        content: fields.markdoc({
+          label: "Content",
+          options: {
+            image: {
+              directory: "src/assets/images/sitecore",
+              publicPath: "@images/sitecore/",
+            },
+          },
+        }),
+        date: fields.date({
+          label: "Publication date",
+          description: "The date of the publication",
+        }),
+      },
+    }),
+
+
   },
 });
