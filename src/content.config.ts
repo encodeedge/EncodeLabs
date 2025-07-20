@@ -94,4 +94,12 @@ const frontend = defineCollection({
   }),
 });
 
-export const collections = { articles, reference, spreadsheets, whitepapers, projects, roadmaps, gettingstarted, aiml, sitecore, frontend };
+const tutorials = defineCollection({
+  loader: glob({ pattern: ['**/*.md', '**/*.mdx', '**/*.mdoc'], base: "./src/content/tutorials" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.date(),
+  }),
+});
+export const collections = { articles, reference, spreadsheets, whitepapers, projects, roadmaps, gettingstarted, aiml, sitecore, frontend, tutorials };
