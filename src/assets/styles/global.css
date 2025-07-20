@@ -92,3 +92,38 @@
   @apply relative z-10 flex h-full flex-col border-dashed border-slate-300 p-4 before:absolute before:inset-0 before:-z-1 before:bg-linear-to-b/oklch before:via-80% before:opacity-0 hover:before:from-transparent hover:before:via-transparent hover:before:to-teal-500/20 hover:before:opacity-100 focus:outline-hidden focus:before:from-transparent focus:before:via-transparent focus:before:to-teal-500/20 focus:before:opacity-100 md:p-6;
 }
 
+/* Add to your global CSS or inside a <style> tag in Navbar.astro */
+.social-share-custom :is(a, button) {
+  background: none;
+  border-radius: 0.75rem;
+  transition: 
+    color 0.2s,
+    transform 0.15s,
+    box-shadow 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.11rem; /* was 1.35rem */
+  box-shadow: none;
+}
+.social-share-custom :is(a, button):hover {
+  transform: translateY(-2px) scale(1.12);
+  box-shadow: 0 4px 16px 0 rgb(20 184 166 / 0.10);
+}
+
+/* Brand hover colors */
+.social-share-custom a[aria-label="YouTube"]:hover    { color: #FF0000; }
+.social-share-custom a[aria-label="Twitch"]:hover     { color: #9147FF; }
+.social-share-custom a[aria-label="Instagram"]:hover  { color: #E1306C; }
+.social-share-custom a[aria-label="LinkedIn"]:hover   { color: #0077b5; }
+.social-share-custom a[aria-label="X"]:hover,
+.social-share-custom a[aria-label="Twitter"]:hover    { color: #1da1f2; }
+.social-share-custom a[aria-label="Medium"]:hover     { color: #12100e; }
+
+.social-share-custom svg {
+  display: block;
+  width: 1.11em;   /* was 1.35em */
+  height: 1.11em;  /* was 1.35em */
+  stroke-width: 0;
+}
+

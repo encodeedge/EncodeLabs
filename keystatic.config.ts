@@ -126,6 +126,30 @@ export default config({
         }),
       },
     }),
+    tutorials: collection({
+      label: "Tutorials",
+      slugField: "title",
+      path: "src/content/tutorials/*",
+      format: { contentField: "content" },
+      schema: {
+        title: fields.slug({ name: { label: "Title" } }),
+        description: fields.text({ label: "Description" }),
+        content: fields.markdoc({
+          label: "Content",
+          options: {
+            image: {
+              directory: "src/assets/images/tutorials",
+              publicPath: "@images/tutorials/",
+            },
+          },
+        }),
+        date: fields.date({
+          label: "Publication date",
+          description: "The date of the publication",
+        }),
+      },
+    }),
+
     roadmaps: collection({
       label: "Roadmaps",
       slugField: "title",

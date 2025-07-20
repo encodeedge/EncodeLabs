@@ -10,9 +10,9 @@ export const featuresMenu = [
       },
       {
         icon: "presentationChart",
-        title: "AI/ML Competitions",
+        title: "Competitions",
         description: "Test your knowledge by participating in live competitions.",
-        href: "/AI-ML/Competitions",
+        href: "/Live/Competitions",
       },
     ],
   },
